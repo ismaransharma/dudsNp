@@ -1,0 +1,69 @@
+/* Mobile Navbar Adjustment */
+@media (max-width: 768px) {
+  #topHeader {
+    height: 6rem;
+  }
+
+  #topHeader .col-md-6.left span {
+    font-size: 1.4rem;
+  }
+
+  #navbar {
+    height: 8rem;
+  }
+
+  /* Hero section Css Starts Here */
+  #hero {
+    height: auto;
+  }
+
+  #hero .right .image img {
+    display: none;
+  }
+  /* Hero section Css Ends Here */
+
+  /* Cate section Css Starts Here */
+  #cate {
+    height: auto;
+    padding: 3em 2em;
+  }
+
+  #cate .col-md-4 {
+    padding: 2rem 0;
+  }
+
+  #cate .col-md-6.left {
+    width: 50%;
+  }
+
+  #cate .col-md-6.right {
+    width: 50%;
+  }
+  /* Cate section Css Ends Here */
+
+  /* New Arrival section Css Starts  Here */
+  #newArri {
+    height: auto;
+  }
+
+  #newArri .col.col-sm-3.col-md-3 {
+    padding: 1em 0;
+  }
+  /* New Arrival section Css Ends Here */
+
+  /* mini section Css Starts Here */
+  #mini .col-md-4.left,
+  #mini .col-md-4.middle,
+  #mini .col-md-4.right {
+    padding: 0;
+    text-align: center;
+  }
+
+  #mini .col-md-4.left h3,
+  #mini .col-md-4.middle h3,
+  #mini .col-md-4.right h3 {
+    font-size: medium;
+  }
+
+  /* mini section Css Ends Here */
+}

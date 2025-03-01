@@ -44,6 +44,13 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--navbar);
+  overflow: hidden;
+}
+
+#navbar .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #navbar .left h3 {
@@ -52,6 +59,7 @@ body {
 
 #navbar .right ul {
   display: flex;
+  gap: 1.5rem;
   justify-content: space-between;
 }
 
@@ -295,7 +303,7 @@ body {
 /* New Arrival Section Css Starts Here */
 #newArri {
   height: auto;
-  padding: 2rem;
+  padding: 2rem 0;
   /* background-color: red; */
 }
 
@@ -303,12 +311,17 @@ body {
   font-size: 4rem;
 }
 
+#newArri .mainArea {
+  /* padding: 0 3em; */
+}
+
 #newArri .mainArea .box {
   height: auto;
-  width: 75%;
+  width: 100%;
   padding: 2rem 0;
   transition: 0.3s ease-in;
   margin: 2rem 0;
+  /* box-shadow: 0.1rem 0.1rem 1rem var(--fontColor); */
 }
 
 #newArri .mainArea .box:hover {
@@ -342,38 +355,40 @@ button.addToCart {
 
 /* Mini Section Css Starts Here */
 #mini {
-  height: 10rem;
+  height: auto;
   width: 100%;
+  margin: 1em 0;
+  overflow: hidden;
   /* background-color: var(--navbar); */
 }
 
 #mini .col-md-4.left {
   height: 100%;
   background-color: var(--navbar);
-  padding: 0 6rem;
+  padding: 0 3em;
 }
 
 #mini .col-md-4.middle {
   height: 100%;
   background-color: var(--navBorder);
-  padding: 0 6rem;
+  padding: 0 3em;
 }
 
 #mini .col-md-4.right {
   height: 100%;
   background-color: var(--navbar);
-  padding: 0 6rem;
+  padding: 0 3em;
 }
 
 #mini .col-md-4 .col-md-3 img {
-  height: 6rem;
+  height: 5em;
   width: auto;
 }
 
 #mini .col-md-4 .col-md-9 h3 {
-  font-size: 2.3rem;
+  font-size: 2em;
   text-align: left;
-  margin: 1.6rem 0;
+  margin: 0.8em 0;
   text-transform: uppercase;
   font-weight: 500;
 }

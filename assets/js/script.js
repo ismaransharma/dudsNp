@@ -19,6 +19,8 @@ const addDataToHTML = () => {
   if (listProducts.length > 0) {
     listProducts.forEach((product) => {
       let newProduct = document.createElement("div");
+      newProduct.classList.add("col");
+      newProduct.classList.add("col-sm-6");
       newProduct.classList.add("col-md-4");
       newProduct.innerHTML = `<div class="box center">
           <img src="${product.image}" alt="Arrival Image" />
