@@ -1,0 +1,386 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 400vh;
+}
+
+:root {
+  --top-header: #000;
+  --navbar: #f1f1f1;
+  --black: #000;
+  --white: #fff;
+  --fontColor: #252525;
+  --navBorder: #e53637;
+  --cate: #9747ff;
+}
+
+#topHeader {
+  height: 6rem;
+  padding: 2rem;
+  background-color: var(--top-header);
+}
+
+#topHeader .row span {
+  font-size: 1.5rem;
+}
+
+/* NavBar Css Starts Here */
+#navbar {
+  height: 6rem;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navbar);
+}
+
+#navbar .left h3 {
+  font-size: 3rem;
+}
+
+#navbar .right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar .right ul li {
+  /* margin: 0 2rem; */
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+#navbar .right ul li a {
+  text-decoration: none;
+  color: var(--fontColor);
+  transition: 0.1s;
+}
+
+#navbar .right ul li .svgs {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+#navbar .right ul li a.active {
+  width: 100%;
+  border-bottom: 0.4rem solid var(--navBorder);
+}
+
+#navbar .right ul li a:hover {
+  border-bottom: 0.4rem solid var(--navBorder);
+}
+
+#navbar .right ul li button {
+  border: none;
+}
+
+#navbar .cartBody .box {
+  height: 52rem;
+  width: 45rem;
+  background-color: #d9d9d9;
+  position: absolute;
+  right: 0.8rem;
+  top: 6rem;
+  overflow: hidden;
+}
+
+#navbar .cartBody .box .col-md-4.cartImg img {
+  height: 4rem;
+  width: auto;
+}
+
+#navbar .cartBody .box .col-md-4.cartText span {
+  font-size: 1.6rem;
+  margin: 0 0.4rem;
+}
+
+#navbar .cartBody {
+  display: none;
+  transition: 2s ease-in-out;
+}
+
+#navbar .cartBody .col-md-4 .miniBox {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--navbar);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0 0 0.3rem 0;
+}
+
+#navbar .cartBody .col-md-4 .inputBox input {
+  height: 2rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#navbar .cartBody .col-md-4 .inputBox input::-webkit-outer-spin-button,
+#navbar .cartBody .col-md-4 .inputBox input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#navbar .cartBody .lower {
+  position: relative;
+  bottom: -40.2rem;
+}
+
+#navbar .cartBody .lower .col-md-6.left {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  text-align: center;
+}
+
+#navbar .cartBody .lower .col-md-6.left button {
+  color: #252525;
+  font-size: 2rem;
+  background-color: #fff;
+  border: none;
+}
+
+#navbar .cartBody .lower .col-md-6.right {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navBorder);
+  text-align: center;
+}
+
+#navbar .cartBody .lower .col-md-6.right button {
+  color: #fff;
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+.showCart {
+  display: block !important;
+}
+
+.close {
+  display: none;
+}
+
+/* NavBar Css Ends Here */
+
+/* Hero Section Css Starts Here */
+#hero {
+  height: 45rem;
+  padding: 2rem;
+  overflow: hidden;
+  /* background-color: #d2d2d2; */
+}
+
+#hero .left {
+  margin: 15rem 0;
+}
+
+#hero .left .texts h5 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: var(--navBorder);
+}
+
+#hero .left .texts h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0.4rem 0 1.2rem 0;
+}
+
+#hero .left .texts button.buttonShop {
+  height: 5rem;
+  width: 18rem;
+  padding: 0 1rem;
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--black);
+  text-align: center;
+}
+
+#hero .right img {
+  position: relative;
+  bottom: -2.5rem;
+}
+/* Hero Section Css Ends Here */
+
+/* Categories Section Css Starts Here */
+#cate {
+  height: 35rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+#cate .col-md-4 .box {
+  height: 20rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--white);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+#cate .col-md-4 .box .left h3 {
+  font-size: 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+#cate .col-md-4 .box .left h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+#cate .col-md-4 .box .left h4.shopNow {
+  font-size: 1.8rem;
+  margin: 6rem 0;
+  color: #fff;
+  display: none;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+#cate .col-md-4 .box .right img {
+  height: 18rem;
+  position: relative;
+  right: 9rem;
+  /* bottom: 2rem; */
+  width: auto;
+}
+
+#cate .col-md-4 .box:hover {
+  background-color: var(--cate);
+  opacity: 70%;
+}
+
+#cate .col-md-4 .box:hover .ajgea {
+  color: #fff;
+}
+
+#cate .col-md-4 .box:hover .shopNow {
+  display: block !important;
+}
+/* Categories Section Css Ends Here */
+
+/* New Arrival Section Css Starts Here */
+#newArri {
+  height: auto;
+  padding: 2rem;
+  /* background-color: red; */
+}
+
+#newArri .header h2 {
+  font-size: 4rem;
+}
+
+#newArri .mainArea .box {
+  height: auto;
+  width: 75%;
+  padding: 2rem 0;
+  transition: 0.3s ease-in;
+  margin: 2rem 0;
+}
+
+#newArri .mainArea .box:hover {
+  box-shadow: 0.1rem 0.1rem 1rem var(--fontColor);
+}
+
+#newArri .mainArea .box img {
+  height: 20rem;
+  margin: 1.5rem 0;
+  width: auto;
+}
+
+#newArri .mainArea .box .texts h3 {
+  font-size: 2.4rem;
+}
+
+#newArri .mainArea .box .texts h4 {
+  font-size: 1.9rem;
+}
+
+button.addToCart {
+  height: 3rem;
+  width: 50%;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--navbar);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* New Arrival Section Css Ends Here */
+
+/* Mini Section Css Starts Here */
+#mini {
+  height: 10rem;
+  width: 100%;
+  /* background-color: var(--navbar); */
+}
+
+#mini .col-md-4.left {
+  height: 100%;
+  background-color: var(--navbar);
+  padding: 0 6rem;
+}
+
+#mini .col-md-4.middle {
+  height: 100%;
+  background-color: var(--navBorder);
+  padding: 0 6rem;
+}
+
+#mini .col-md-4.right {
+  height: 100%;
+  background-color: var(--navbar);
+  padding: 0 6rem;
+}
+
+#mini .col-md-4 .col-md-3 img {
+  height: 6rem;
+  width: auto;
+}
+
+#mini .col-md-4 .col-md-9 h3 {
+  font-size: 2.3rem;
+  text-align: left;
+  margin: 1.6rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#mini .col-md-4.middle .col-md-9 h3 {
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* Mini Section Css Ends Here */

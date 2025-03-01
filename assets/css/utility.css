@@ -1,0 +1,39 @@
+.right {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.middleMain {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end {
+  text-align: end;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.light,
+.normal {
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}

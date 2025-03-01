@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Black Hoodie",
+    "image": "assets/images/hoodie.png",
+    "price": 4500
+  },
+  {
+    "id": 2,
+    "name": "Plain Black Hoodie",
+    "image": "assets/images/hoodie2.png",
+    "price": 3000
+  },
+  {
+    "id": 3,
+    "name": "Army Men Black Tshirt",
+    "image": "assets/images/army_men_black_tshirt_white_print_spg_special_protection_group_1280x.jpg",
+    "price": 2300
+  },
+  {
+    "id": 4,
+    "name": "Knitted Jumper",
+    "image": "assets/images/kittedJumper.png",
+    "price": 2700
+  }
+]
